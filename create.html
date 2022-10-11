@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Your Post</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<header>
+    <div class="menu1">
+        <a href="index.html">Home</a> <a href="posts.html">Posts</a> <a href="create.html">Create a Post</a>
+    </div>
+    <h1>WT Wesley Foundation Community Blog</h1>
+</header>
+
+<hr>
+
+<body>
+    <form action="demo_blog.php" onsubmit="postBlog()">
+        <fieldset>
+            <legend>Blog Info:</legend>
+            <label for="bTitle">Blog Title:</label>
+            <input type="text" id="bTitle" name="Blog Title" placeholder="My Memories">
+            <label for="fName">Full Name:</label>
+            <input type="text" id="fName" name="Full Name" placeholder="Mikey Littau">
+            <select name="classification" id="classification">
+                <optgroup label="Student at Wesley">
+                    <option value="member">Member</option>
+                    <option value="leader">Leader</option>
+                </optgroup>
+                <optgroup label="Graduated or First Time">
+                    <option value="guest">Guest</option>
+                    <option value="alumni">Alumni</option>
+                </optgroup>
+            </select>
+        </fieldset>
+
+
+        <br>
+        <fieldset>
+            <label for="bContentType">Tell Your Story:</label>
+            <input list="type" name="Story Type" id="bContentType">
+            <datalist id="storyType">
+                <option value="Memory"></option>
+                <option value="Story"></option>
+                <option value="Something Funny"></option>
+            </datalist>
+            <br>
+            <textarea id="bContent" name="Blog Content" rows="10" cols="50">Share your favorite story!</textarea>
+        </fieldset>
+
+
+
+
+        <br>
+        <hr><br>
+        <button type="submit">Post Blog</button>
+    </form>
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <legend>How Long of a Read?</legend>
+        <input type="range" id="a" value="60">
+        +<input type="number" id="b" value="0">
+        =<output name="x" for="a b"></output>
+        <p>Minutes</p>
+    </form>
+
+    <script>
+        function postBlog() {
+            alert("Your blog has been posted!")
+        }
+    </script>
+</body>
+
+</html>

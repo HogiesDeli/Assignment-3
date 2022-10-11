@@ -1,0 +1,46 @@
+.menu1>a {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: maroon;
+    color: white;
+}
+
+.menu1>a:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+.box {
+    width: 100%;
+    border: 2px solid maroon;
+    font-weight: bold;
+}
+
+.table,th,td {
+    border: 2px solid;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+header {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 19px;
+    letter-spacing: 4px;
+    text-align: center;
+
+    background-image: url(https://uploads-ssl.webflow.com/61d8ab875a4c6b5e247357f4/61e2308e563b68bf105b8f23_Logo%20W.svg), url(https://uploads-ssl.webflow.com/61d8ab875a4c6b5e247357f4/61e2308e563b68bf105b8f23_Logo%20W.svg);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: bottom left, bottom right;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-kerning: auto;
+
+
+
+    background-color: #A9A9A9;
+}
