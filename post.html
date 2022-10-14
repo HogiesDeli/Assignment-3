@@ -5,16 +5,20 @@
     <title>Tupos Tuesdays</title>
     <link rel="stylesheet" href="style.css">
     <style>
-      p{
-        text-indent: 2em;
-      }  
+        p {
+            text-indent: 2em;
+        }
     </style>
 </head>
 
 <header>
-    <div class="menu1">
-        <a href="index.html">Home</a> <a href="posts.html">Posts</a> <a href="create.html">Create a Post</a>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="posts.html">Posts</a></li>
+            <li><a href="create.html">Create a Post</a></li>
+        </ul>
+    </nav>
     <h1>WT Wesley Foundation Community Blog</h1>
 </header>
 
@@ -26,7 +30,7 @@
         <h2><b>The Crazyness of Tupos Tuesdays</b></h2>
         <hr>
         <figure>
-            <img src="images/Worship Rehersal.jpg" alt="Setup Photo in ABH" style="width: 50%;height: 50%;">
+            <img src="images/Worship Rehersal.jpg" alt="Setup Photo in ABH" style="width: 50%;height: 50%;float: left;">
             <figcaption>Worship Rehersal in Alumni Banquet Hall.</figcaption>
         </figure>
         <p>
@@ -48,42 +52,56 @@
                 issues
                 for another team.
 
-                <details>
-                    <summary>Create Team</summary>
-                    <p>
-                        Create Team is incharge of Sound and Lighting, Social Media, Videos, Cameras, and Livestream for
-                        any
-                        and all events that are put on.
-                    </p>
-                </details>
+                <div class="container">
+                    <div class="flexbox">
+                        <details>
+                            <summary>Create Team</summary>
+                            <p>
+                                Create Team is incharge of Sound and Lighting, Social Media, Videos, Cameras, and
+                                Livestream
+                                for any and all events that are put on.
+                            </p>
+                        </details>
+                    </div>
 
-                <details>
-                    <summary>Worship Team</summary>
-                    <p>
-                        Worship Team is incharge of leading worship for Tupos and any other worship night events.
-                    </p>
-                </details>
+                    <div class="flexbox">
+                        <details>
+                            <summary>Worship Team</summary>
+                            <p>
+                                Worship Team is incharge of leading worship for Tupos and any other worship night
+                                events.
+                            </p>
+                        </details>
+                    </div>
 
-                <details>
-                    <summary>Prayer Team</summary>
-                    <p>
-                        Prayer Team is there for anyone who needs to pray with a leader and is also incharge of all
-                        prayer
-                        cards that are put in by members.
-                    </p>
-                </details>
+                    <div class="flexbox">
+                        <details>
+                            <summary>Prayer Team</summary>
+                            <p>
+                                Prayer Team is there for anyone who needs to pray with a leader and is also incharge of
+                                all
+                                prayer
+                                cards that are put in by members.
+                            </p>
+                        </details>
+                    </div>
 
-                <details>
-                    <summary>Guest Care</summary>
-                    <p>
-                        Guest Care is incharge of getting attendence, greeting and connecting with people during all of
-                        our
-                        events.
-                    </p>
-                </details>
+                    <div class="flexbox">
+                        <details>
+                            <summary>Guest Care</summary>
+                            <p>
+                                Guest Care is incharge of getting attendence, greeting and connecting with people during
+                                all
+                                of
+                                our
+                                events.
+                            </p>
+                        </details>
+                    </div>
+                </div>
             </aside>
         </div>
-        <p>
+        <p style="float:none;">
             Each team starts at different times of the day with Create starting at 3pm with setting up lights, speakers,
             media booth, and other things.
             Worship team starts rehersing all of the songs for that night around 4:30 after they have all of their
