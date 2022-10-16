@@ -6,74 +6,101 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="posts.html">Posts</a></li>
-            <li><a href="create.html">Create a Post</a></li>
-        </ul>
-    </nav>
-    <h1>WT Wesley Foundation Community Blog</h1>
-</header>
-
-<hr>
-
 <body>
-    <form action="demo_blog.php" onsubmit="postBlog()">
-        <fieldset>
-            <legend>Blog Info:</legend>
-            <label for="bTitle">Blog Title:</label>
-            <input type="text" id="bTitle" name="Blog Title" placeholder="My Memories">
-            <label for="fName">Full Name:</label>
-            <input type="text" id="fName" name="Full Name" placeholder="Mikey Littau">
-            <select name="classification" id="classification">
-                <optgroup label="Student at Wesley">
-                    <option value="member">Member</option>
-                    <option value="leader">Leader</option>
-                </optgroup>
-                <optgroup label="Graduated or First Time">
-                    <option value="guest">Guest</option>
-                    <option value="alumni">Alumni</option>
-                </optgroup>
-            </select>
-        </fieldset>
+    <div class="grid">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="posts.html">Posts</a></li>
+                    <li><a href="create.html">Create a Post</a></li>
+                </ul>
+            </nav>
+            <h1>WT Wesley Foundation Community Blog</h1>
+        </header>
+        <main>
+            <hr>
+
+            <form action="demo_blog.php" onsubmit="postBlog()">
+                <fieldset>
+                    <legend>Blog Info:</legend>
+                    <label for="bTitle">Blog Title:</label>
+                    <input type="text" id="bTitle" name="Blog Title" placeholder="My Memories">
+                    <label for="fName">Full Name:</label>
+                    <input type="text" id="fName" name="Full Name" placeholder="Mikey Littau">
+                    <select name="classification" id="classification">
+                        <optgroup label="Student at Wesley">
+                            <option value="member">Member</option>
+                            <option value="leader">Leader</option>
+                        </optgroup>
+                        <optgroup label="Graduated or First Time">
+                            <option value="guest">Guest</option>
+                            <option value="alumni">Alumni</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
 
 
-        <br>
-        <fieldset>
-            <label for="bContentType">Tell Your Story:</label>
-            <input list="type" name="Story Type" id="bContentType">
-            <datalist id="storyType">
-                <option value="Memory"></option>
-                <option value="Story"></option>
-                <option value="Something Funny"></option>
-            </datalist>
-            <br>
-            <textarea id="bContent" name="Blog Content" rows="10" cols="50">Share your favorite story!</textarea>
-        </fieldset>
+                <br>
+                <fieldset>
+                    <label for="bContentType">Tell Your Story:</label>
+                    <input list="type" name="Story Type" id="bContentType">
+                    <datalist id="storyType">
+                        <option value="Memory"></option>
+                        <option value="Story"></option>
+                        <option value="Something Funny"></option>
+                    </datalist>
+                    <br>
+                    <textarea id="bContent" name="Blog Content" rows="10"
+                        cols="50">Share your favorite story!</textarea>
+                </fieldset>
 
 
 
 
-        <br>
-        <hr><br>
-        <button type="submit">Post Blog</button>
-    </form>
+                <br>
+                <hr><br>
+                <button type="submit">Post Blog</button>
+            </form>
 
-    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-        <legend>How Long of a Read?</legend>
-        <input type="range" id="a" value="60">
-        +<input type="number" id="b" value="0">
-        =<output name="x" for="a b"></output>
-        <p>Minutes</p>
-    </form>
+            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                <legend>How Long of a Read?</legend>
+                <input type="range" id="a" value="60">
+                +<input type="number" id="b" value="0">
+                =<output name="x" for="a b"></output>
+                <p>Minutes</p>
+            </form>
+        </main>
 
-    <script>
-        function postBlog() {
-            alert("Your blog has been posted!")
-        }
-    </script>
+        <script>
+            function postBlog() {
+                alert("Your blog has been posted!")
+            }
+        </script>
+
+        <aside>
+            <h2>Office Hours</h2>
+            <p>Monday: 10am to 12am</p>
+            <p>Tuesday: 10am to 12am</p>
+            <p>Wednesday: 10am to 12am</p>
+            <p>Thursday: 10am to 12am</p>
+            <p>Friday: 10am to 12am</p>
+            <p>Saturday: Closed</p>
+            <p>Sunday: Closed</p>
+
+            <h2>Where To Find Us</h2>
+            <p>107 26th Street, Canyon TX 79015</p>
+            <p>info@wtwesley.com</p>
+            <p>(806)655-3535</p>
+        </aside>
+
+
+        <footer>
+            <hr>
+            Website Made by: Hogan Karr
+        </footer>
+
+    </div>
 </body>
 
 </html>
